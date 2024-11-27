@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        <form id="resume-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Your Phone Number" required>
+
+            <label for="summary">Summary:</label>
+            <textarea id="summary" placeholder="Brief summary about yourself"></textarea>
+
+            <label for="skills">Skills (comma-separated):</label>
+            <input type="text" id="skills" placeholder="e.g. HTML, CSS, JavaScript">
+
+            <label for="experience">Experience:</label>
+            <textarea id="experience" placeholder="Describe your experience"></textarea>
+
+            <label for="education">Education:</label>
+            <textarea id="education" placeholder="Your educational qualifications"></textarea>
+
+            <button type="button" id="save-btn">Save</button>
+            <button type="button" id="generate-btn">Generate PDF</button>
+        </form>
+
+        <div id="resume-preview">
+            <h2>Resume Preview</h2>
+            <div id="resume-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</body>
+</html>
